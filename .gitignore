@@ -1,0 +1,7 @@
+.vscode/
+.idea/
+__pycache__/
+__pypackages__/
+.pdm.toml
+.dccache
+.pylintrc
