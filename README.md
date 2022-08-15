@@ -84,7 +84,7 @@ Usage: python main.py <IP_ADDRESS> <PASSWORD (4 digit, only numbers)>
 
 ## 🤝 Contributing
 
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+Before contributing issues or pull requests, be sure to review the [Contributing Guidelines](./.github/CONTRIBUTING.md) first.
 
 ## 💬 Questions?
 
@@ -98,4 +98,4 @@ Feel free to [open an issue](http://github.com/angelside/zebra-password-changer-
 
 ## 🏛️ License
 
-[MIT](./LICENSE)
+This project is open-sourced software licensed under the [MIT license](./LICENSE).
