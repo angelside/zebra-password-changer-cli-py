@@ -107,7 +107,7 @@ def validate_password(input_password):
         input_password (str): password
     """
     if not input_password.isdigit() or len(input_password) != 4:
-        exit_with_msg("Please enter a 4 digit number!")
+        exit_with_msg("Password is invalid! Please enter a 4 digit number.")
 
 
 def main():
