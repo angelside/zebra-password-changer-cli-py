@@ -78,7 +78,7 @@ def check_arguments(argument_list):
     # Argument is "help" -> show help & exit
     help_arg_list = ["help", "--help", "-help", "/help"]
     if argument_list[0] in help_arg_list:
-        print("zebra-zpl-send-cli-py\n")
+        print("zebra-password-changer\n")
         cli_help()
         sys.exit(0)
 
