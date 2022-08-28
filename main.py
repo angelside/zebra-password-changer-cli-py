@@ -84,7 +84,7 @@ def check_arguments(argument_list):
 
     # Not have 2 argument -> error & exit
     if len(argument_list) != 2:
-        print("There is only one argument!\n")
+        print("Wrong command or argument!\n")
         cli_help()
         sys.exit(0)
 
