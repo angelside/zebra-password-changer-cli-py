@@ -58,7 +58,7 @@ def print_help():
         version  show CLI version
 
     DESCRIPTION
-        CLI tool that allows changing Zebra printers password
+        CLI tool that allows changing Zebra printer's password
     """
     print(f"{CliColors.OKCYAN}USAGE{CliColors.ENDC}")
     print("    python main.py <IP_ADDRESS> <PASSWORD>")
@@ -81,7 +81,7 @@ def error_msg(msg, exit=False):
 
     Args:
         msg (str): message
-        exit (bool, optional): exit from app, defaults to False.
+        exit (bool, optional): exit from the app, defaults to False.
     """
     print(f"{CliColors.FAIL}[ERROR]{CliColors.ENDC} {msg}")
     if exit:
@@ -124,7 +124,7 @@ def validate_ip_address(ip_address):
     try:
         ipaddress.ip_address(ip_address)
     except ValueError:
-        # invalid ip adress
+        # invalid ip address
         return False
     else:
         return True
@@ -149,7 +149,7 @@ def check_ip_and_password(input_ip_address, input_password):
     valid_password   = validate_password(input_password, config['password_total_char'])
 
     if not valid_ip_address and not valid_password:
-        error_msg("IP adress is invalid!")
+        error_msg("IP address is invalid!")
         error_msg(f"Password is invalid! Please enter a {config['password_total_char']} digit number.")
         usage_help_msg()
         sys.exit(0)
@@ -191,7 +191,7 @@ def main():
     argument_list = full_cmd_arguments[1:]  # Keep all but the first
     check_arguments(argument_list)
 
-    # Continue only if argument check is passed
+    # Continue only if the argument check is passed
 
     input_ip_address = argument_list[0]
     input_password   = argument_list[1]
